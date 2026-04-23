@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventify | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="dashboard">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary">
+      <a class="brand" href="index.html">Eventify</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="dashboard.html" aria-current="page">Dashboard</a>
+        <a href="documentation.html">Documentation</a>
+        <div class="nav-tools">
+          <button class="icon-btn" id="modeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+          <button class="pill-btn" id="themeToggle" type="button">Neutral Mode</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Dashboard</p>
+        <h1>Event statistics and quick insights</h1>
+        <p>Static metrics show how the catalog is distributed across registrations and ticket categories.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="stats-grid" id="dashboardStats"></div>
+        <div class="dashboard-grid">
+          <article class="card">
+            <h2>Category Summary</h2>
+            <div id="categoryStats"></div>
+          </article>
+          <article class="card">
+            <h2>Ticket Category Mix</h2>
+            <div id="ticketStats"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">Eventify</a>
+        <p>Data-backed presentation of event scale and participation.</p>
+      </div>
+      <div>
+        <h3>Insights</h3>
+        <a href="categories.html">All Events</a>
+        <a href="documentation.html">Project Notes</a>
+        <a href="about.html">Mission</a>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="events.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

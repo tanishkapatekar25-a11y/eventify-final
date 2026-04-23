@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventify | FAQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="faq">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary">
+      <a class="brand" href="index.html">Eventify</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html" aria-current="page">FAQ</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="documentation.html">Documentation</a>
+        <div class="nav-tools">
+          <button class="icon-btn" id="modeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+          <button class="pill-btn" id="themeToggle" type="button">Neutral Mode</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Frequently Asked Questions</p>
+        <h1>Common questions about tickets, venues, and registration</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-list">
+        <article class="faq-item card">
+          <button class="faq-question" type="button" aria-expanded="false">How do I confirm my event registration?</button>
+          <div class="faq-answer">
+            <p>Open any event page, fill in the registration form, and submit. Eventify shows a confirmation popup with a sample badge based on the selected ticket type.</p>
+          </div>
+        </article>
+        <article class="faq-item card">
+          <button class="faq-question" type="button" aria-expanded="false">Can I switch between dark and light mode?</button>
+          <div class="faq-answer">
+            <p>Yes. Use the moon and sun toggle in the navigation bar. Your preference is stored locally for the next visit.</p>
+          </div>
+        </article>
+        <article class="faq-item card">
+          <button class="faq-question" type="button" aria-expanded="false">Where are the venues located?</button>
+          <div class="faq-answer">
+            <p>Every event detail page lists the venue. The contact page also includes an embedded map for the central Eventify location.</p>
+          </div>
+        </article>
+        <article class="faq-item card">
+          <button class="faq-question" type="button" aria-expanded="false">What ticket categories are available?</button>
+          <div class="faq-answer">
+            <p>Most events offer General, VIP, and Student or Workshop-based options. The dashboard summarizes ticket category usage across the catalog.</p>
+          </div>
+        </article>
+        <article class="faq-item card">
+          <button class="faq-question" type="button" aria-expanded="false">Is the website accessible on mobile devices?</button>
+          <div class="faq-answer">
+            <p>Yes. Eventify uses a responsive layout, readable fonts, strong contrast, focus styles, and flexible cards optimized for mobile, tablet, and desktop screens.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">Eventify</a>
+        <p>Helpful answers before your next registration.</p>
+      </div>
+      <div>
+        <h3>Navigate</h3>
+        <a href="categories.html">Categories</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div>
+        <h3>More</h3>
+        <a href="about.html">About</a>
+        <a href="documentation.html">Documentation</a>
+        <a href="testimonials.html">Testimonials</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="events.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

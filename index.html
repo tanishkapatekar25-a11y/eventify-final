@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventify | Home</title>
+  <meta name="description" content="Eventify is a polished event information website for sports, music, education, travel, and seminar events.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary">
+      <a class="brand" href="index.html">Eventify</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="documentation.html">Documentation</a>
+        <div class="nav-tools">
+          <button class="icon-btn" id="modeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+          <button class="pill-btn" id="themeToggle" type="button">Neutral Mode</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Readymade Event Information Website</p>
+          <h1>Plan smarter with one vibrant hub for every major campus and community event.</h1>
+          <p class="hero-text">Browse curated experiences, discover what is happening next, and register in a few clicks with a clean, examiner-friendly interface.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="categories.html">Explore Events</a>
+            <a class="btn btn-secondary" href="documentation.html">View Documentation</a>
+          </div>
+          <div class="hero-stats">
+            <article>
+              <strong>15</strong>
+              <span>Featured events</span>
+            </article>
+            <article>
+              <strong>5</strong>
+              <span>Core categories</span>
+            </article>
+            <article>
+              <strong>100%</strong>
+              <span>Responsive pages</span>
+            </article>
+          </div>
+        </div>
+        <div class="hero-showcase">
+          <div class="slideshow-card">
+            <div class="slides" id="heroSlides" aria-label="Event highlights slideshow"></div>
+            <div class="slide-dots" id="heroDots" aria-label="Slideshow pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-panel">
+        <article class="panel card">
+          <p class="eyebrow">Next Upcoming Event</p>
+          <h2 id="nextEventTitle">Loading next event...</h2>
+          <p id="nextEventMeta" class="muted">Please wait while Eventify prepares the countdown.</p>
+          <div class="countdown-grid" id="nextEventCountdown" aria-live="polite"></div>
+          <a class="btn btn-primary" id="nextEventLink" href="categories.html">View Event</a>
+        </article>
+        <article class="panel info-strip">
+          <p class="eyebrow">Quick Links</p>
+          <div class="quick-links">
+            <a href="categories.html#sports">Sports</a>
+            <a href="categories.html#music">Music</a>
+            <a href="categories.html#education">Education</a>
+            <a href="categories.html#travel">Travel</a>
+            <a href="categories.html#seminar">Seminar</a>
+          </div>
+          <p class="muted">Use quick links to jump into category pages, discover event details, and register with interactive forms.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Categories</p>
+          <h2>Explore events by interest</h2>
+          <p>Each category includes three curated events with live countdowns, registration forms, and polished event detail pages.</p>
+        </div>
+        <div class="category-grid" id="homeCategories"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container spotlight-grid">
+        <article class="card spotlight-card">
+          <p class="eyebrow">Why Eventify</p>
+          <h2>Designed for clarity, accessibility, and presentation-ready polish.</h2>
+          <ul class="feature-list">
+            <li>Teal-first visual identity with optional neutral mode</li>
+            <li>Dark and light themes with smooth transitions</li>
+            <li>Search, filters, countdowns, forms, and dashboard insights</li>
+            <li>Responsive layout for desktop, tablet, and mobile</li>
+          </ul>
+        </article>
+        <article class="card newsletter-card">
+          <p class="eyebrow">Newsletter Signup</p>
+          <h2>Get the next big event in your inbox.</h2>
+          <form class="stack-form" data-form-type="newsletter">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <p class="form-note">Static demo form for collecting newsletter interest.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">Eventify</a>
+        <p>Modern event discovery for sports, music, education, travel, and seminars.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="documentation.html">Documentation</a>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://x.com/" target="_blank" rel="noreferrer">X / Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="confirmationModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Close popup">×</button>
+      <p class="eyebrow">Registration Confirmed</p>
+      <h2 id="modalTitle">Your ticket has been reserved.</h2>
+      <p id="modalText">We have stored your registration details for this demo.</p>
+      <span class="badge" id="modalBadge">Early Bird Registered</span>
+    </div>
+  </div>
+
+  <script src="events.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

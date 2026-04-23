@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventify | Documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="documentation">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary">
+      <a class="brand" href="index.html">Eventify</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="documentation.html" aria-current="page">Documentation</a>
+        <div class="nav-tools">
+          <button class="icon-btn" id="modeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+          <button class="pill-btn" id="themeToggle" type="button">Neutral Mode</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Project Documentation</p>
+        <h1>Structure, features, and technologies used in Eventify</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container docs-grid">
+        <article class="card">
+          <h2>Project Structure</h2>
+          <p><code>index.html</code> handles the landing page, <code>categories.html</code> lists all events, and the <code>events/</code> folder contains 15 dedicated event pages.</p>
+          <p><code>styles.css</code> centralizes layout, colors, responsive behavior, and animations. <code>script.js</code> manages interactivity, while <code>events.js</code> stores reusable event data.</p>
+        </article>
+        <article class="card">
+          <h2>Main Features</h2>
+          <ul class="feature-list">
+            <li>Hero slideshow and category quick links on the homepage</li>
+            <li>Search and filter tools for event discovery</li>
+            <li>Countdown timers for the upcoming event and individual event pages</li>
+            <li>Dark/light toggle plus teal/neutral theme switcher</li>
+            <li>Popup confirmation and ticket badge logic for forms</li>
+            <li>Dashboard, FAQ, testimonials, map embed, and newsletter form</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Technologies Used</h2>
+          <p>The project is built with plain HTML for structure, CSS for visual design and responsiveness, and vanilla JavaScript for data rendering and interactions.</p>
+        </article>
+        <article class="card">
+          <h2>Scalability</h2>
+          <p>New events can be added by inserting another object into the shared dataset and creating a matching event HTML file that points to its slug.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">Eventify</a>
+        <p>Documentation that makes the project easy to explain and expand.</p>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <a href="categories.html">Categories</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="testimonials.html">Testimonials</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="events.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
